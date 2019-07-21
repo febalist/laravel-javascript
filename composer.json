@@ -1,0 +1,19 @@
+{
+  "name": "febalist/laravel-javascript",
+  "require": {
+    "illuminate/support": "^5.8",
+    "laracasts/utilities": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Febalist\\Laravel\\JavaScript\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Febalist\\Laravel\\JavaScript\\JavaScriptServiceProvider"
+      ]
+    }
+  }
+}
