@@ -2,16 +2,14 @@
 
 namespace Febalist\Laravel\JavaScript;
 
+use Febalist\Laravel\JavaScript\Http\Middleware\GlobalJavaScript;
 use Illuminate\Support\ServiceProvider;
 
 class JavaScriptServiceProvider extends ServiceProvider
 {
     public function boot()
     {
-        javascript([
-            'env' => config('app.env'),
-            'debug' => config('app.debug'),
-        ]);
+        app('router')->pushMiddlewareToGroup('web', GlobalJavaScript::class);
     }
 
     public function register()
