@@ -1,7 +1,6 @@
 {
   "name": "febalist/laravel-javascript",
   "require": {
-    "illuminate/support": "^5.8|^6.0",
     "laracasts/utilities": "^3.0"
   },
   "autoload": {
